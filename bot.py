@@ -970,11 +970,7 @@ def main():
             logger.info("Bot started successfully")
             
             # Run the bot
-            app.run_polling(
-                drop_pending_updates=True,
-                timeout=30,
-                bootstrap_retries=5
-            )
+            app.run_polling(drop_pending_updates=True)
             
             # If we reach here, bot stopped normally
             break
